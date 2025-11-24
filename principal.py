@@ -144,3 +144,20 @@ while verifi:
 
     if opcion==9:
         verifi = False
+
+------------------------------------
+productos = [
+    {'nombre': 'Laptop', 'precio': 1200},
+    {'nombre': 'Teléfono', 'precio': 800},
+    {'nombre': 'Tablet', 'precio': 400},
+    {'nombre': 'Monitor', 'precio': 600},
+    {'nombre': 'Teclado', 'precio': 150}
+]
+
+# Ordena los productos por precio de mayor a menor
+productos_ordenados = sorted(productos, key=lambda x: x['precio'], reverse=True)
+
+# Toma los 3 productos más caros
+top_3_mas_caros = productos_ordenados[:3]
+
+print(top_3_mas_caros)
